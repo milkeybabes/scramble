@@ -1,0 +1,3 @@
+Captured WAV files will be written here automatically by MAME.
+Run Capture_Laser_Test.bat first to verify the injection.
+Do not add source ROMs to this directory.
