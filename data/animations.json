@@ -1,0 +1,502 @@
+{
+  "source": "Original Konami Scramble main Z80 ROM (parent set)",
+  "reference": "ScottTunstall/Scramble/scramble.asm; ANIMATE $13E4",
+  "note": "Sprite code bit 6/7 may carry flip flags; low 6 bits select graphics. Character code is a GROUP index: four consecutive 8x8 chars form one 16x16 target. Delay follows the original decrement-until-zero ANIMATE routine.",
+  "animations": {
+    "player_one": {
+      "source_address": "1860",
+      "kind": "sprite",
+      "label": "Player 1 jet",
+      "loop_address": "1860",
+      "frames": [
+        {
+          "colour": 6,
+          "code": 40,
+          "delay": 5
+        },
+        {
+          "colour": 6,
+          "code": 42,
+          "delay": 5
+        },
+        {
+          "colour": 6,
+          "code": 44,
+          "delay": 5
+        },
+        {
+          "colour": 6,
+          "code": 46,
+          "delay": 5
+        }
+      ]
+    },
+    "player_two": {
+      "source_address": "186F",
+      "kind": "sprite",
+      "label": "Jet rear/exhaust sprite (original PLAYER_TWO record)",
+      "loop_address": "186F",
+      "frames": [
+        {
+          "colour": 0,
+          "code": 39,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 41,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 43,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 45,
+          "delay": 5
+        }
+      ]
+    },
+    "player_explosion": {
+      "source_address": "187E",
+      "kind": "sprite",
+      "label": "Player explosion",
+      "loop_address": "187E",
+      "frames": [
+        {
+          "colour": 4,
+          "code": 60,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 61,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 60,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 61,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 60,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 61,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 62,
+          "delay": 16
+        }
+      ]
+    },
+    "player_two_explosion": {
+      "source_address": "1896",
+      "kind": "sprite",
+      "label": "Player 2 explosion",
+      "loop_address": "1896",
+      "frames": [
+        {
+          "colour": 4,
+          "code": 188,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 189,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 188,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 189,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 188,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 189,
+          "delay": 16
+        },
+        {
+          "colour": 4,
+          "code": 190,
+          "delay": 16
+        }
+      ]
+    },
+    "player_bomb": {
+      "source_address": "1AD8",
+      "kind": "sprite",
+      "label": "Player bomb",
+      "loop_address": "1AD8",
+      "frames": [
+        {
+          "colour": 6,
+          "code": 33,
+          "delay": 4
+        },
+        {
+          "colour": 6,
+          "code": 34,
+          "delay": 4
+        },
+        {
+          "colour": 6,
+          "code": 33,
+          "delay": 4
+        },
+        {
+          "colour": 6,
+          "code": 34,
+          "delay": 4
+        },
+        {
+          "colour": 6,
+          "code": 35,
+          "delay": 8
+        },
+        {
+          "colour": 6,
+          "code": 36,
+          "delay": 8
+        },
+        {
+          "colour": 6,
+          "code": 37,
+          "delay": 254
+        }
+      ]
+    },
+    "bomb_explosion": {
+      "source_address": "1AF0",
+      "kind": "sprite",
+      "label": "Bomb explosion",
+      "loop_address": "1AF0",
+      "frames": [
+        {
+          "colour": 6,
+          "code": 56,
+          "delay": 9
+        },
+        {
+          "colour": 6,
+          "code": 57,
+          "delay": 9
+        },
+        {
+          "colour": 6,
+          "code": 58,
+          "delay": 9
+        },
+        {
+          "colour": 6,
+          "code": 59,
+          "delay": 9
+        }
+      ]
+    },
+    "rocket": {
+      "source_address": "1D58",
+      "kind": "sprite",
+      "label": "Launched rocket",
+      "loop_address": "1D58",
+      "frames": [
+        {
+          "colour": 0,
+          "code": 29,
+          "delay": 16
+        },
+        {
+          "colour": 0,
+          "code": 30,
+          "delay": 16
+        }
+      ]
+    },
+    "rocket_explosion": {
+      "source_address": "1D61",
+      "kind": "sprite",
+      "label": "Rocket explosion",
+      "loop_address": "1D61",
+      "frames": [
+        {
+          "colour": 6,
+          "code": 56,
+          "delay": 5
+        },
+        {
+          "colour": 6,
+          "code": 57,
+          "delay": 5
+        },
+        {
+          "colour": 6,
+          "code": 58,
+          "delay": 5
+        },
+        {
+          "colour": 6,
+          "code": 59,
+          "delay": 5
+        }
+      ]
+    },
+    "ufo": {
+      "source_address": "1E1A",
+      "kind": "sprite",
+      "label": "UFO",
+      "loop_address": "1E1A",
+      "frames": [
+        {
+          "colour": 5,
+          "code": 26,
+          "delay": 16
+        }
+      ]
+    },
+    "ufo_explosion": {
+      "source_address": "1E20",
+      "kind": "sprite",
+      "label": "UFO explosion",
+      "loop_address": "1E20",
+      "frames": [
+        {
+          "colour": 4,
+          "code": 56,
+          "delay": 11
+        },
+        {
+          "colour": 4,
+          "code": 57,
+          "delay": 11
+        },
+        {
+          "colour": 4,
+          "code": 58,
+          "delay": 11
+        },
+        {
+          "colour": 4,
+          "code": 59,
+          "delay": 11
+        }
+      ]
+    },
+    "fireball": {
+      "source_address": "1F1B",
+      "kind": "sprite",
+      "label": "Fireball",
+      "loop_address": "1F1B",
+      "frames": [
+        {
+          "colour": 0,
+          "code": 53,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 54,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 55,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 48,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 55,
+          "delay": 5
+        },
+        {
+          "colour": 0,
+          "code": 54,
+          "delay": 5
+        }
+      ]
+    },
+    "ground_rocket": {
+      "source_address": "19C6",
+      "kind": "character",
+      "label": "Stationary rocket",
+      "loop_address": "19C6",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 28,
+          "delay": 16
+        }
+      ]
+    },
+    "ground_fuel": {
+      "source_address": "19CC",
+      "kind": "character",
+      "label": "Fuel tank",
+      "loop_address": "19CC",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 16,
+          "delay": 16
+        }
+      ]
+    },
+    "ground_mystery": {
+      "source_address": "19D2",
+      "kind": "character",
+      "label": "Mystery target",
+      "loop_address": "19D2",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 51,
+          "delay": 16
+        }
+      ]
+    },
+    "ground_base": {
+      "source_address": "19D8",
+      "kind": "character",
+      "label": "Enemy base",
+      "loop_address": "19D8",
+      "frames": [
+        {
+          "colour": 0,
+          "code": 47,
+          "delay": 6
+        },
+        {
+          "colour": 0,
+          "code": 38,
+          "delay": 6
+        },
+        {
+          "colour": 0,
+          "code": 31,
+          "delay": 6
+        }
+      ]
+    },
+    "ground_explosion": {
+      "source_address": "19E4",
+      "kind": "character",
+      "label": "Ground object explosion",
+      "loop_address": "19E4",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 56,
+          "delay": 16
+        },
+        {
+          "colour": 2,
+          "code": 57,
+          "delay": 16
+        },
+        {
+          "colour": 2,
+          "code": 58,
+          "delay": 16
+        },
+        {
+          "colour": 2,
+          "code": 59,
+          "delay": 16
+        }
+      ]
+    },
+    "ground_fuel_explosion": {
+      "source_address": "19F3",
+      "kind": "character",
+      "label": "Fuel tank explosion",
+      "loop_address": "19F3",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 56,
+          "delay": 16
+        },
+        {
+          "colour": 2,
+          "code": 57,
+          "delay": 16
+        },
+        {
+          "colour": 2,
+          "code": 58,
+          "delay": 16
+        },
+        {
+          "colour": 2,
+          "code": 59,
+          "delay": 16
+        }
+      ]
+    },
+    "ground_mystery_100": {
+      "source_address": "1A02",
+      "kind": "character",
+      "label": "Mystery 100 points",
+      "loop_address": "1A02",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 17,
+          "delay": 80
+        }
+      ]
+    },
+    "ground_mystery_200": {
+      "source_address": "1A0C",
+      "kind": "character",
+      "label": "Mystery 200 points",
+      "loop_address": "1A0C",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 18,
+          "delay": 80
+        }
+      ]
+    },
+    "ground_mystery_300": {
+      "source_address": "1A12",
+      "kind": "character",
+      "label": "Mystery 300 points",
+      "loop_address": "1A12",
+      "frames": [
+        {
+          "colour": 2,
+          "code": 19,
+          "delay": 80
+        }
+      ]
+    }
+  }
+}

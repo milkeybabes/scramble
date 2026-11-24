@@ -1,0 +1,100 @@
+{
+  "bomb_drop": {
+    "original_seconds": 2.06,
+    "ready_seconds": 2.06,
+    "rms": 0.0519,
+    "peak": 0.2711,
+    "processing": "original length; 25 ms end fade"
+  },
+  "bomb_explosion": {
+    "original_seconds": 2.96,
+    "ready_seconds": 1.76,
+    "rms": 0.1547,
+    "peak": 0.9699,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  },
+  "default_ambient": {
+    "original_seconds": 4.78,
+    "ready_seconds": 4.66,
+    "rms": 0.1646,
+    "peak": 0.2814,
+    "processing": "120 ms overlap-add wrap crossfade; loop"
+  },
+  "extra_life": {
+    "original_seconds": 2.64,
+    "ready_seconds": 1.38,
+    "rms": 0.073,
+    "peak": 0.276,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  },
+  "fireball_ambient": {
+    "original_seconds": 4.94,
+    "ready_seconds": 4.82,
+    "rms": 0.0168,
+    "peak": 0.0218,
+    "processing": "120 ms overlap-add wrap crossfade; loop"
+  },
+  "ground_explosion": {
+    "original_seconds": 2.54,
+    "ready_seconds": 2.54,
+    "rms": 0.1846,
+    "peak": 0.6831,
+    "processing": "original length; 25 ms end fade"
+  },
+  "laser": {
+    "original_seconds": 1.72,
+    "ready_seconds": 0.54,
+    "rms": 0.0376,
+    "peak": 0.1456,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  },
+  "low_fuel": {
+    "original_seconds": 2.72,
+    "ready_seconds": 1.0,
+    "rms": 0.2213,
+    "peak": 0.5865,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  },
+  "maze_ambient": {
+    "original_seconds": 4.94,
+    "ready_seconds": 4.82,
+    "rms": 0.0772,
+    "peak": 0.1028,
+    "processing": "120 ms overlap-add wrap crossfade; loop"
+  },
+  "rocket_explosion": {
+    "original_seconds": 2.54,
+    "ready_seconds": 1.64,
+    "rms": 0.0827,
+    "peak": 0.613,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  },
+  "ship_explosion": {
+    "original_seconds": 3.12,
+    "ready_seconds": 3.12,
+    "rms": 0.1539,
+    "peak": 0.7331,
+    "processing": "original length; 25 ms end fade"
+  },
+  "start_music": {
+    "original_seconds": 7.0,
+    "ready_seconds": 4.85,
+    "rms": 0.1161,
+    "peak": 0.3965,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  },
+  "ufo_ambient": {
+    "original_seconds": 4.94,
+    "ready_seconds": 4.82,
+    "rms": 0.1421,
+    "peak": 0.2289,
+    "processing": "120 ms overlap-add wrap crossfade; loop"
+  },
+  "ufo_explosion": {
+    "original_seconds": 2.54,
+    "ready_seconds": 1.71,
+    "rms": 0.1831,
+    "peak": 0.8656,
+    "processing": "quiet tail trimmed; 25 ms fade"
+  }
+}

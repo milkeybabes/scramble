@@ -1,0 +1,222 @@
+{
+  "game": "Scramble (Konami, 1981) - original parent set",
+  "characters": {
+    "count": 256,
+    "dimensions": [
+      8,
+      8
+    ],
+    "atlas_columns": 16,
+    "atlas_rows": 16
+  },
+  "sprites": {
+    "count": 64,
+    "dimensions": [
+      16,
+      16
+    ],
+    "atlas_columns": 8,
+    "atlas_rows": 8
+  },
+  "orientation": "GFX assets rotated clockwise 90 degrees for standard horizontal-monitor viewing",
+  "palette_source": "c01s.6e (MAME Galaxian resistor-weight conversion)",
+  "graphics_bitplane_order": "MAME: first plane high bit, second plane low bit",
+  "transparency": "pen 0 alpha=0 on exported RGBA character and sprite sheets",
+  "palettes": [
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        71,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        222,
+        222,
+        255
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        71,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        255
+      ],
+      [
+        151,
+        0,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        33,
+        222,
+        0
+      ],
+      [
+        255,
+        71,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        33,
+        222,
+        0
+      ],
+      [
+        255,
+        0,
+        255
+      ],
+      [
+        255,
+        255,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        222,
+        222,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        0,
+        222,
+        255
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        0
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        151,
+        0,
+        255
+      ]
+    ]
+  ],
+  "background_blue_rgb": [
+    0,
+    0,
+    86
+  ],
+  "bullets_rgb": {
+    "yellow": [
+      239,
+      239,
+      0
+    ],
+    "white": [
+      239,
+      239,
+      239
+    ]
+  },
+  "tiles_sheet": "characters_color_{0..7}.png",
+  "sprites_sheet": "sprites_color_{0..7}.png"
+}
